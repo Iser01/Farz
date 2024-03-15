@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="overflow: visible !important">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" href="img/Scree.jpg" />
+    <title>FARZ</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/global.css" type="text/css" media="all" />
+    <link
+      href="fontawesome/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="flaticon/flaticon.css" rel="stylesheet" type="text/css" />
+    <link href="css/linkstyles.css" rel="stylesheet" type="text/css" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/formstyle.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      .background-white ~ .progressbar,
+      .progressbar {
+        background-color: #06859b;
+      }
+      .ready .progressbar {
+        background-color: transparent;
+      }
+      .data .row {
+        margin: 45px 10px 120px !important;
+      }
+      .form-card {
+        margin: 0 auto !important;
+      }
+      section.row {
+        position: relative;
+      }
+      .data .row p {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+      }
+      .form-radio {
+        background-size: 200%;
+        width: 35%;
+        margin: 1%;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: 0.4s;
+        text-align: center;
+        padding: 20px;
+        display: inline-block;
+        float: none;
+      }
+      .form-radio:hover {
+        transform: scale(0.95, 0.95);
+      }
+      .bg-orange {
+        background-color: #f8a022;
+        background-image: url(img/contact.jpeg);
+      }
+      .bg-blue {
+        background-color: #068499;
+        background-image: url(img/contact.jpg);
+      }
+      .bg-lightblue {
+        background-color: #97d7f4;
+        background-image: url(img/bg2.jpg);
+      }
+
+      .form-checkbox-legend {
+        margin: 26px 20px 26px !important;
+        font-family: nexa-b;
+        font-size: 27px !important;
+        color: #fff !important;
+        text-transform: uppercase !important;
+      }
+      .form-budget-legend {
+        margin: 0px 0px 30px 0 !important;
+        color: #fff !important;
+        font-weight: bold !important;
+      }
+      .pd {
+        padding-left: 4rem;
+        padding-bottom: 30rem;
+      }
+    </style>
+    <link href="css/cursor.css" rel="stylesheet" type="text/css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
+
+  <body class="body-scroll demo-1">
+    <div class="cursor"></div>
+    <header id="js-header" class="site__header">
+      <a href="index.html">
+        <img src="img/sp.png" alt="" class="site__logo"
+      /></a>
+      <button id="js-toggle-menu" class="site__header__hamburger">
+        <span></span>
+      </button>
+
+      <nav id="js-nav" class="site__nav">
+        <ul id="menu-header" class="site__nav__menu">
+          <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="about.html"
+              data-namespace="who"
+              data-letters="Who We Are"
+              >Who We Are</a
+            >
+          </li>
+
+          <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="services.html"
+              data-namespace="services"
+              data-letters="services"
+              >services</a
+            >
+          </li>
+
+          <!--<li id="menu-item-294" class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="proj.html"
+              data-namespace="home"
+              data-letters="Portfolio"
+              >Portfolio</a
+            >
+          </li>
+          
+          <!-- <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="casestudy.html"
+              data-namespace="case studies"
+              data-letters="case studies"
+              >case studies</a
+            >
+          </li> -->
+          <!-- <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="careers.html"
+              data-namespace="careers"
+              data-letters="careers"
+              >careers</a
+            >
+          </li> -->
+          <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="contact.html"
+              data-letters="Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="blog barba-container" data-namespace="who">
+      <main>
+        <div data-scroll class="page page--layout-2">
+          <div class="content content--full content--alternate">
+            <div class="content__item content__item--wide">
+              <div class="content__item-imgwrap">
+                <div
+                  class="content__item-img"
+                  style="background-image: url(img/contact.jpg)"
+                ></div>
+              </div>
+              <!--<div class="content__item-deco"></div>-->
+              <h2 class="content__item-title pd">Contact Us</h2>
+            </div>
+            <div class="data">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12" style="text-align: center">
+                    <h2 class="content__item-title mytitle">
+                      <span> It’s Your Call </span>
+                      We’re Here to Help!
+                    </h2>
+                    <p>
+                      If you’re looking to develop the digital presence of your
+                      brand, or to work on a one-time project, or maybe you have
+                      an inquiry, or you’re lost and need help figuring out this
+                      whole digital thing, we’re here! Fill out the form below
+                      and we’ll be getting in touch in no time.
+                    </p>
+                  </div>
+                </div>
+
+                <section
+                  class="row"
+                  data-paroller-factor="-0.1"
+                  data-paroller-type="foreground"
+                  data-paroller-direction="vertical"
+                >
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="form-card contact">
+                      <fieldset class="form-fieldset">
+                        <div class="form-checkbox-legend">
+                          Send us a massage
+                        </div>
+                        <div class="form-element form-input">
+                          <input
+                            id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9"
+                            class="form-element-field"
+                            placeholder="Please fill in your full name"
+                            type="input"
+                            required
+                          />
+                          <div class="form-element-bar"></div>
+                          <label
+                            class="form-element-label"
+                            for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9"
+                            >Name</label
+                          >
+                        </div>
+                        <div class="form-element form-input">
+                          <input
+                            id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9"
+                            class="form-element-field"
+                            placeholder="Please fill in your phone number"
+                            type="input"
+                            required
+                          />
+                          <div class="form-element-bar"></div>
+                          <label
+                            class="form-element-label"
+                            for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9"
+                            >phone</label
+                          >
+                        </div>
+
+                        <div class="form-element form-input">
+                          <input
+                            id="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz"
+                            class="form-element-field"
+                            placeholder="Please fill in your Email "
+                            type="email"
+                            required
+                          />
+                          <div class="form-element-bar"></div>
+                          <label
+                            class="form-element-label"
+                            for="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz"
+                            >Email</label
+                          >
+                          <small class="form-element-hint"
+                            >We will never spam you!</small
+                          >
+                        </div>
+                        <div class="form-element form-textarea">
+                          <textarea
+                            id="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm"
+                            class="form-element-field"
+                            placeholder=" "
+                          ></textarea>
+                          <div class="form-element-bar"></div>
+                          <label
+                            class="form-element-label"
+                            for="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm"
+                            >project description</label
+                          >
+                        </div>
+                      </fieldset>
+                      <div class="form-actions">
+                        <div class="col-md-6 text-center">
+                          <a href="#" class="btn-main btn"> send </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="row text-center">
+                  <h2 class="content__item-title mytitle text-center">
+                    <span>our</span>
+                    locations
+                  </h2>
+                  <div
+                    class="form-radio form-radio-block col-md-4 bg-lightblue"
+                  >
+                    <div class="form-checkbox-legend">Libya</div>
+                    <div class="form-budget-legend">
+                      Address
+                      <p>[15 Saade]</p>
+                    </div>
+
+                    <div class="form-budget-legend">
+                      Technical Support
+                      <p><a href="tel:+201026688225"> +218913225122</a></p>
+                    </div>
+
+                    <div class="form-budget-legend">
+                      Email
+                      <p>
+                        <a href="mailto:#"> test@test.com</a>
+                      </p>
+                    </div>
+                    <div class="form-budget-legend">
+                      For Your Feedback
+                      <p>
+                        <a href="mailto:#">test@test.com</a>
+                      </p>
+                    </div>
+                    <a href="" class="btn linezegzag">View on google maps</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- .barba-container -->
+
+    <footer id="js-footer" class="site__footer">
+      <div class="site__footer__container clearfix">
+        <p class="site__footer__container__text">© 2024 powered by ISER</p>
+
+        <p class="site__footer__container__text">
+          <a href="#" target="_blank" title="facebook"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="#" target="_blank" title="instagram">
+            <i class="fa fa-instagram"></i
+          ></a>
+          <a href="#" target="_blank" title="linkedin"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="" target="_blank" title="twitter"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="doors-transition doors-transition_top"></div>
+    <div class="doors-transition doors-transition_bottom"></div>
+
+    <div class="progressbar"><span id="progressbar"></span></div>
+
+    <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery.paroller.js" type="text/javascript"></script>
+    <script>
+      $(function () {
+        $(window).paroller();
+        $("body").scrollspy({ target: "#main-navbar" });
+      });
+    </script>
+
+    <script type="text/javascript" src="js/TweenLite.min.js"></script>
+    <script type="text/javascript" src="js/TimelineLite.min.js"></script>
+    <script type="text/javascript" src="js/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
+    <script type="text/javascript" src="js/functions.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/formindex.js" type="text/javascript"></script>
+
+    <script src="js/cursor.js" type="text/javascript"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/demo.js" type="text/javascript"></script>
+  </body>
+</html>
